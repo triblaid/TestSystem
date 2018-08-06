@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище DatabaseMainModelContainer" CdmEntityContainer="DatabaseMainEntities">
+    <EntitySetMapping Name="TableMain">
+      <EntityTypeMapping TypeName="DatabaseMainModel.TableMain">
+        <MappingFragment StoreEntitySet="TableMain">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="indexid" ColumnName="indexid" />
+          <ScalarProperty Name="year" ColumnName="year" />
+          <ScalarProperty Name="month" ColumnName="month" />
+          <ScalarProperty Name="day" ColumnName="day" />
+          <ScalarProperty Name="hour" ColumnName="hour" />
+          <ScalarProperty Name="zsp" ColumnName="zsp" />
+          <ScalarProperty Name="planvalueproductionges" ColumnName="planvalueproductionges" />
+          <ScalarProperty Name="planvalueproductionaes" ColumnName="planvalueproductionaes" />
+          <ScalarProperty Name="planvalueproductiontes" ColumnName="planvalueproductiontes" />
+          <ScalarProperty Name="sumtminges" ColumnName="sumtminges" />
+          <ScalarProperty Name="sumtminaes" ColumnName="sumtminaes" />
+          <ScalarProperty Name="sumtmintes" ColumnName="sumtmintes" />
+          <ScalarProperty Name="sumtgminges" ColumnName="sumtgminges" />
+          <ScalarProperty Name="sumtgminaes" ColumnName="sumtgminaes" />
+          <ScalarProperty Name="sumtgmintes" ColumnName="sumtgmintes" />
+          <ScalarProperty Name="sumtmaxges" ColumnName="sumtmaxges" />
+          <ScalarProperty Name="sumtmaxaes" ColumnName="sumtmaxaes" />
+          <ScalarProperty Name="sumtmaxtes" ColumnName="sumtmaxtes" />
+          <ScalarProperty Name="planvaluedemand" ColumnName="planvaluedemand" />
+          <ScalarProperty Name="planvalueexport" ColumnName="planvalueexport" />
+          <ScalarProperty Name="planvalueimport" ColumnName="planvalueimport" />
+          <ScalarProperty Name="averpricebuy" ColumnName="averpricebuy" />
+          <ScalarProperty Name="averpricecell" ColumnName="averpricecell" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

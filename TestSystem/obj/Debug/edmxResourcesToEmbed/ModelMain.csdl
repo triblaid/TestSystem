@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DatabaseMainModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="TableMain">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="indexid" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="year" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="month" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="day" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="hour" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="zsp" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="planvalueproductionges" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="planvalueproductionaes" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="planvalueproductiontes" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="sumtminges" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="sumtminaes" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="sumtmintes" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="sumtgminges" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="sumtgminaes" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="sumtgmintes" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="sumtmaxges" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="sumtmaxaes" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="sumtmaxtes" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="planvaluedemand" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="planvalueexport" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="planvalueimport" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="averpricebuy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="averpricecell" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="DatabaseMainEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="TableMain" EntityType="Self.TableMain" />
+  </EntityContainer>
+</Schema>

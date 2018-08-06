@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Хранилище DatabaseMainModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="TableMain">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="indexid" Type="nvarchar" MaxLength="50" />
+          <Property Name="year" Type="nvarchar" MaxLength="50" />
+          <Property Name="month" Type="nvarchar" MaxLength="50" />
+          <Property Name="day" Type="nvarchar" MaxLength="50" />
+          <Property Name="hour" Type="nvarchar" MaxLength="50" />
+          <Property Name="zsp" Type="nvarchar" MaxLength="50" />
+          <Property Name="planvalueproductionges" Type="nvarchar" MaxLength="50" />
+          <Property Name="planvalueproductionaes" Type="nvarchar" MaxLength="50" />
+          <Property Name="planvalueproductiontes" Type="nvarchar" MaxLength="50" />
+          <Property Name="sumtminges" Type="nvarchar" MaxLength="50" />
+          <Property Name="sumtminaes" Type="nvarchar" MaxLength="50" />
+          <Property Name="sumtmintes" Type="nvarchar" MaxLength="50" />
+          <Property Name="sumtgminges" Type="nvarchar" MaxLength="50" />
+          <Property Name="sumtgminaes" Type="nvarchar" MaxLength="50" />
+          <Property Name="sumtgmintes" Type="nvarchar" MaxLength="50" />
+          <Property Name="sumtmaxges" Type="nvarchar" MaxLength="50" />
+          <Property Name="sumtmaxaes" Type="nvarchar" MaxLength="50" />
+          <Property Name="sumtmaxtes" Type="nvarchar" MaxLength="50" />
+          <Property Name="planvaluedemand" Type="nvarchar" MaxLength="50" />
+          <Property Name="planvalueexport" Type="nvarchar" MaxLength="50" />
+          <Property Name="planvalueimport" Type="nvarchar" MaxLength="50" />
+          <Property Name="averpricebuy" Type="nvarchar" MaxLength="50" />
+          <Property Name="averpricecell" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityContainer Name="Хранилище DatabaseMainModelContainer">
+          <EntitySet Name="TableMain" EntityType="Self.TableMain" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DatabaseMainModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="TableMain">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="indexid" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="year" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="month" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="day" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="hour" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="zsp" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="planvalueproductionges" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="planvalueproductionaes" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="planvalueproductiontes" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="sumtminges" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="sumtminaes" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="sumtmintes" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="sumtgminges" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="sumtgminaes" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="sumtgmintes" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="sumtmaxges" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="sumtmaxaes" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="sumtmaxtes" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="planvaluedemand" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="planvalueexport" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="planvalueimport" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="averpricebuy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="averpricecell" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="DatabaseMainEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="TableMain" EntityType="Self.TableMain" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Хранилище DatabaseMainModelContainer" CdmEntityContainer="DatabaseMainEntities">
+          <EntitySetMapping Name="TableMain">
+            <EntityTypeMapping TypeName="DatabaseMainModel.TableMain">
+              <MappingFragment StoreEntitySet="TableMain">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="indexid" ColumnName="indexid" />
+                <ScalarProperty Name="year" ColumnName="year" />
+                <ScalarProperty Name="month" ColumnName="month" />
+                <ScalarProperty Name="day" ColumnName="day" />
+                <ScalarProperty Name="hour" ColumnName="hour" />
+                <ScalarProperty Name="zsp" ColumnName="zsp" />
+                <ScalarProperty Name="planvalueproductionges" ColumnName="planvalueproductionges" />
+                <ScalarProperty Name="planvalueproductionaes" ColumnName="planvalueproductionaes" />
+                <ScalarProperty Name="planvalueproductiontes" ColumnName="planvalueproductiontes" />
+                <ScalarProperty Name="sumtminges" ColumnName="sumtminges" />
+                <ScalarProperty Name="sumtminaes" ColumnName="sumtminaes" />
+                <ScalarProperty Name="sumtmintes" ColumnName="sumtmintes" />
+                <ScalarProperty Name="sumtgminges" ColumnName="sumtgminges" />
+                <ScalarProperty Name="sumtgminaes" ColumnName="sumtgminaes" />
+                <ScalarProperty Name="sumtgmintes" ColumnName="sumtgmintes" />
+                <ScalarProperty Name="sumtmaxges" ColumnName="sumtmaxges" />
+                <ScalarProperty Name="sumtmaxaes" ColumnName="sumtmaxaes" />
+                <ScalarProperty Name="sumtmaxtes" ColumnName="sumtmaxtes" />
+                <ScalarProperty Name="planvaluedemand" ColumnName="planvaluedemand" />
+                <ScalarProperty Name="planvalueexport" ColumnName="planvalueexport" />
+                <ScalarProperty Name="planvalueimport" ColumnName="planvalueimport" />
+                <ScalarProperty Name="averpricebuy" ColumnName="averpricebuy" />
+                <ScalarProperty Name="averpricecell" ColumnName="averpricecell" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Нет" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

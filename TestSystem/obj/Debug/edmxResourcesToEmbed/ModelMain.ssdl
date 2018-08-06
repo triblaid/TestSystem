@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище DatabaseMainModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="TableMain">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="indexid" Type="nvarchar" MaxLength="50" />
+    <Property Name="year" Type="nvarchar" MaxLength="50" />
+    <Property Name="month" Type="nvarchar" MaxLength="50" />
+    <Property Name="day" Type="nvarchar" MaxLength="50" />
+    <Property Name="hour" Type="nvarchar" MaxLength="50" />
+    <Property Name="zsp" Type="nvarchar" MaxLength="50" />
+    <Property Name="planvalueproductionges" Type="nvarchar" MaxLength="50" />
+    <Property Name="planvalueproductionaes" Type="nvarchar" MaxLength="50" />
+    <Property Name="planvalueproductiontes" Type="nvarchar" MaxLength="50" />
+    <Property Name="sumtminges" Type="nvarchar" MaxLength="50" />
+    <Property Name="sumtminaes" Type="nvarchar" MaxLength="50" />
+    <Property Name="sumtmintes" Type="nvarchar" MaxLength="50" />
+    <Property Name="sumtgminges" Type="nvarchar" MaxLength="50" />
+    <Property Name="sumtgminaes" Type="nvarchar" MaxLength="50" />
+    <Property Name="sumtgmintes" Type="nvarchar" MaxLength="50" />
+    <Property Name="sumtmaxges" Type="nvarchar" MaxLength="50" />
+    <Property Name="sumtmaxaes" Type="nvarchar" MaxLength="50" />
+    <Property Name="sumtmaxtes" Type="nvarchar" MaxLength="50" />
+    <Property Name="planvaluedemand" Type="nvarchar" MaxLength="50" />
+    <Property Name="planvalueexport" Type="nvarchar" MaxLength="50" />
+    <Property Name="planvalueimport" Type="nvarchar" MaxLength="50" />
+    <Property Name="averpricebuy" Type="nvarchar" MaxLength="50" />
+    <Property Name="averpricecell" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="Хранилище DatabaseMainModelContainer">
+    <EntitySet Name="TableMain" EntityType="Self.TableMain" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
